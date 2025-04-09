@@ -44,6 +44,11 @@
             bindings = <&kp MINUS>;
             key-positions = <7 8>;
         };
+
+        mission_control {
+            bindings = <&kp F3>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
@@ -101,12 +106,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_2 {
+        ten_key {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                       &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp EXCLAMATION             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp LS(LG(NUMBER_4))  &kp LEFT          &kp DOWN           &kp UP          &kp RIGHT             &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &kp LS(LG(N5))        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                     &trans                &trans                                                                     &kp PIPE
+&kp F3                      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                       &kp SLASH     &kp N1  &kp N2  &kp N3  &kp MINUS
+&kp EXCLAMATION             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp LS(LG(NUMBER_4))  &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp PLUS
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &kp LS(LG(N5))        &kp EQUAL     &kp N7  &kp N8  &kp N9  &kp N0
+&kp LS(COLON)               &trans           &trans           &trans           &trans        &trans                     &trans                &kp ENTER                             &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
